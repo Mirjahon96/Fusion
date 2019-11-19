@@ -1,0 +1,79 @@
+#pricing {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    .card:not(:nth-child(even)) {
+      box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
+
+      &:hover {
+        .icon {
+          background: $pink-color;
+
+          .fas {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 1rem auto;
+
+      &:not(:nth-child(2)) {
+        background: #ebedef;
+
+        .fas {
+          color: $pink-color;
+          font-size: 2rem;
+          line-height: 75px;
+        }
+      }
+    }
+
+    .center-icon {
+      background: $pink-color !important;
+
+      .fas {
+        color: #fff !important;
+      }
+    }
+
+    .text {
+      p {
+        color: $pink-color;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      span {
+        color: $font-color;
+        font-size: 15px;
+      }
+
+      h4 {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+    }
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        font-size: 14px;
+        color: $font-color;
+        padding: 10px;
+      }
+    }
+
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+#contact-us {
+  background: #f9f9f9;
+
+  .content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 1rem;
+  }
+
+  form {
+    color: $font-color;
+    input,
+    textarea {
+      padding: 12px 10px;
+      border: 1px solid #ececec;
+      color: $font-color;
+      outline: none;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+
+      &::placeholder {
+        color: $font-color;
+      }
+
+      &:focus {
+        border-color: $pink-color;
+        transition: all 0.3s;
+      }
+    }
+
+    input {
+      display: inline-block;
+      width: 45%;
+      margin-right: 26px;
+    }
+
+    label {
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 14px;
+
+      &:nth-child(3) {
+        padding-right: 14rem;
+      }
+    }
+
+    textarea,
+    .block {
+      width: 94%;
+    }
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+}

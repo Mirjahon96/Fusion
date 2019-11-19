@@ -1,0 +1,67 @@
+#team {
+  background: #f9f9f9;
+  position: relative;
+
+  .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 2rem;
+  }
+
+  .box {
+    box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
+    margin: 1rem;
+  }
+
+  .img-content {
+    width: 200px;
+    float: left;
+    margin-right: 1.5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text {
+    padding: 1rem 2rem 1rem 1rem;
+
+    h4 {
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: $pink-color;
+      }
+    }
+
+    small {
+      color: #888;
+      font-size: 14px;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+
+    span {
+      .fab {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+      .fa {
+        &-facebook {
+          color: #3b5998;
+        }
+        &-twitter {
+          color: #00aced;
+        }
+        &-instagram {
+          color: #fb3958;
+        }
+      }
+    }
+  }
+}

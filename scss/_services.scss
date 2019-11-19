@@ -1,0 +1,54 @@
+#services {
+  .container {
+    overflow: unset;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    .box {
+      text-align: center;
+      padding: 20px;
+
+      &:hover {
+        .icon {
+          background: $pink-color;
+
+          .fas {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      border: 1px solid #f1f1f1;
+
+      .fas {
+        font-size: 30px;
+        color: $pink-color;
+        line-height: 70px;
+      }
+    }
+
+    .text {
+      h4 {
+        font-size: 1rem;
+        color: #585b60;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          color: $pink-color;
+        }
+      }
+    }
+  }
+}

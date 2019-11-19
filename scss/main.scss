@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans');
+@import 'utilities';
+@import 'navbar';
+@import 'showcase';
+@import 'services';
+@import 'about';
+@import 'features';
+@import 'team';
+@import 'pricing';
+@import 'testimonials';
+@import 'cta';
+@import 'contact';
+@import 'footer';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #222222;
+  font-weight: 700;
+  font-family: 'Arvo', serif;
+}
+
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  color: $font-color;
+  line-height: 1.6;
+}
+
+button {
+  outline: none;
+}
+
+.back-to-top {
+  display: block;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+
+    i {
+    display: block;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #F63854;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+    }
+}
+
+// RESPONSIVE
+@import 'mobile'

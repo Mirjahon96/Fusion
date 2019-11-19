@@ -1,0 +1,152 @@
+// Colors
+$pink-color: #f63854;
+$font-color: #abacae;
+$heading-color: #222222;
+
+.container {
+  max-width: 1180px;
+  padding: 0 15px;
+  // overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card {
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+.hoverable:hover {
+  box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1) !important;
+  transition: all 0.1s;
+}
+
+.shadow {
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
+}
+
+.active {
+  color: $pink-color;
+}
+
+.line {
+  height: 2px;
+  border-bottom: 1px solid $pink-color;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.heading-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.text {
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.block {
+  display: block !important;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #d4e2fd;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 10px;
+
+  &.btn-pink {
+    color: #fff;
+    background: $pink-color;
+    border: 1px dotted $pink-color;
+
+    &:hover {
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+      color: $pink-color;
+      background: #fff;
+    }
+  }
+
+  &.btn-outline {
+    color: $pink-color;
+    background: #fff;
+    border: 1px dotted $pink-color;
+
+    &:hover {
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      background: $pink-color;
+    }
+  }
+}
+
+// Margin & Padding
+$spaceamounts: (0, 1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  // All around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // Bottom margin
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
+  // Top margin
+  .mt-#{$space} {
+    margin-top: #{$space}rem !important;
+  }
+
+  // Right margin
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+
+  // Left margin
+  .ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+
+  // Vertical margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // All around padding
+  .p-#{$space} {
+    padding: #{$space}rem !important;
+  }
+
+  // Vertical padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  // Padding right
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+}

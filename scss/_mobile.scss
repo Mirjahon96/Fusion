@@ -1,0 +1,74 @@
+@media (max-width: 990px) {
+  // Showcase, About, Features, Team, Contact
+  #showcase .content, #about .content, #features .content, #team .content, #contact-us .content {
+    grid-template-columns: 1fr;
+  }
+
+  #showcase .content h1 {
+    font-size: 30px !important;
+  }
+
+  br {
+    display: none;
+  }
+
+  // About, Services, Features, Team, Pricing, Contact, Footer
+  #about .content h2, #services h2, #features h2, #team h2, #pricing h2, #cta h1, #contact-us h2, #footer h2 {
+        font-size: 26px;
+  }
+
+  // Services, Pricing, Footer
+  #services .content, #pricing .content, #footer .content
+     {
+      grid-template-columns: 1fr 1fr;
+    }
+
+  // Call to Action
+  #cta {
+    .content {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+
+  #navbar {
+   ul {
+    display: none;
+  }
+
+  a.btn-collapse {
+    display: block;
+  }
+  
+  }
+  
+
+  #services .content, #pricing .content, #footer .content {
+    grid-template-columns: 1fr;
+  }
+
+  #team .img-content {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  #contact-us form input, #contact form textarea, #contact form .block {
+    width: 100%;
+    display: block;
+    margin-right: 0;
+  }
+
+  #contact-us form label {
+    display: none;
+  }
+}
+
+@media(min-width: 760px) {
+  
+  .collapse {
+    display: none !important;
+  }
+}
